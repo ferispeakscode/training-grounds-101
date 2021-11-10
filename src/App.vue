@@ -1,15 +1,20 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
+  <BasicForm config="A"/>
+  <BasicForm config="B"/>
+  <BasicForm config="C"/>
   <HelloWorld msg="Welcome to Training Grounds 101"/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import BasicForm from './components/BasicForm.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    BasicForm
   }
 }
 </script>
