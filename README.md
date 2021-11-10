@@ -2,6 +2,16 @@
 
 ## Project setup
 ```
+vue create training-grounds-101
+```
+`training-grounds-101` will become the folder name, so make sure you do this command where you want your project to live)
+```
+cd training-grounds-101
+```
+```
+git clone https://github.com/ferispeakscode/training-grounds-101.git
+```
+```
 npm install
 ```
 
