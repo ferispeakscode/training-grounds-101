@@ -32,3 +32,28 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Making Changes
+```
+git status
+```
+- See modified files/what needs to be committed or is staged
+
+```
+git add (filename)
+```
+- Add specified file to staging for commit
+- Note: `git add .` adds all modified files
+
+```
+git commit -m "(commit message)"
+```
+- Commit code to local
+- Include commit message to briefly describe what was changed
+
+```
+git push
+```
+- Push local commits to remote
+- Usually you don't want to do this directly to master in case something breaks but since it's just us, meh.
+
