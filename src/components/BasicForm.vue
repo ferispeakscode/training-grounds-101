@@ -1,7 +1,7 @@
 <template>
   <h1>Basic form with configuration {{ config }} will go here.</h1>
   <label>Name</label>
-  <input type="text" v-model="user">
+  <input type="text" v-model="userName">
   <p>{{user}}</p>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   name: 'BasicForm',
   data() {
     return{
-      user: ''
+      userName: ''
     }
   },
   props: {
