@@ -1,6 +1,25 @@
 {
-    "Information": [
-        {"user": "Miyo"},
-        {"ID": 1}
-    ]
+  "Information": [
+    {
+      "fname": "Miyo",
+      "id": 1,
+      "surname": "Speaks",
+      "age": 22,
+      "sex": "female"
+    },
+    {
+      "surname": "Shayde",
+      "fname": "DiZmal",
+      "sex": "Male",
+      "age": 35,
+      "id": 2
+    },
+    {
+      "surname": "Mc Tester",
+      "fname": "Testee",
+      "sex": "Male",
+      "age": 21,
+      "id": 3
+    }
+  ]
 }
