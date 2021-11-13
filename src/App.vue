@@ -1,8 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <BasicForm config="A"/>
-  <BasicForm config="B"/>
-  <BasicForm config="C"/>
+  <BasicForm type="A"/>
+  <BasicForm type="B"/>
+  <BasicForm type="C"/>
   <HelloWorld msg="Welcome to Training Grounds 101"/>
 </template>
 

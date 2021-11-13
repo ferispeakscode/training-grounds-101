@@ -1,5 +1,16 @@
 <template>
-  <h1>Basic form with configuration {{ config }} will go here.</h1>
+  <!-- Form Header -->
+  <div v-if="type === 'A'">
+    <h1>{{ type }} </h1>
+  </div>
+  <div v-else-if="type === 'B'">
+    <h1>{{ type }}</h1>
+  </div>
+  <div v-else>
+    <h1>{{ type }}</h1>
+  </div>
+
+  <!-- Form Body -->
   <form @submit.prevent="submitData">
     <label>Surname</label>
     <input type="text" v-model="surname">
@@ -34,7 +45,7 @@ export default {
     }
   },
   props: {
-    config: String
+    type: String
   },
   methods: {
     submitData(){
