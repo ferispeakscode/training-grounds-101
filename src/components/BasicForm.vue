@@ -85,6 +85,10 @@ form {
 }
 button {
   background: grey;
+  color:#ddd;
+  padding: 8px 18px;
+  margin: 15px 5px;
+  border: none;
 }
 button:hover {
   background: rgb(58, 250, 186);
