@@ -4,19 +4,16 @@
     <BasicForm type="A"/>
     <BasicForm type="B"/>
     <BasicForm type="C"/>
-    <HelloWorld msg="Welcome to Training Grounds 101"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 import BasicForm from '@/components/BasicForm.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     BasicForm
   }
 }

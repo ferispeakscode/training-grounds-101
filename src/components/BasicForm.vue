@@ -28,7 +28,7 @@
       <label>Age</label>
       <input type="number" size="100" min="1" max="100" step="1" v-model="age">
       <button>Submit</button>
-      <button>Delete</button>
+      <button @click="clearInfo">Delete</button>
     </form>
   </div>
 </template>
@@ -62,6 +62,12 @@ export default {
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(personalData)
       })
+    },
+    clearInfo() {
+      this.surname = '',
+      this.fname = '',
+      this.sex = '',
+      this.age = null
     }
   }
 }
