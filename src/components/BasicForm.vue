@@ -11,25 +11,26 @@
   </div>
 
   <!-- Form Body -->
-  <form @submit.prevent="submitData">
-    <label>Surname</label>
-    <input type="text" v-model="surname">
-    <label>Firstname</label>
-    <input type="text" v-model="fname">
-    <label>Gender</label>
-    <select v-model="sex">
-      <option value="Male">Male</option>
-      <option value="Female">Female</option>
-    </select>
-    <label>Age</label>
-    <input type="number" size="100" min="1" max="100" step="1" v-model="age">
-    <button>Submit</button>
-    <button>Delete</button>
-  </form>
-  
-  <p>{{fname}} {{surname}}</p>
-  <p>{{sex}}</p>
-  <p>{{age}}</p>
+  <div class="title" @click=" fillForm = !fillForm">
+    <h2>Fill Form - {{ type }}</h2>
+  </div>
+  <div v-if="fillForm">
+    <form @submit.prevent="submitData">
+      <label>Surname</label>
+      <input type="text" v-model="surname">
+      <label>Firstname</label>
+      <input type="text" v-model="fname">
+      <label>Gender</label>
+      <select v-model="sex">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <label>Age</label>
+      <input type="number" size="100" min="1" max="100" step="1" v-model="age">
+      <button>Submit</button>
+      <button>Delete</button>
+    </form>
+  </div>
 </template>
 
 <script>
@@ -41,7 +42,8 @@ export default {
       fname: '',
       sex: 'select',
       age: null,
-      uri: 'http://localhost:3000/Information'
+      uri: 'http://localhost:3000/Information',
+      fillForm: false
     }
   },
   props: {
@@ -93,6 +95,9 @@ form {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  border-left: solid rgb(58, 250, 186);
 }
 button {
   background: grey;
@@ -103,5 +108,21 @@ button {
 }
 button:hover {
   background: rgb(58, 250, 186);
+  color: black;
+}
+.title{
+  max-width: 680px;
+  width: 100%;
+  padding: 5px;
+  margin: 25px 0 15px;
+  display: inline-block;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  cursor: pointer;
+  border-left: solid crimson;
+  background: #eee;
 }
 </style>
